@@ -37,16 +37,16 @@ convert -geometry 32x32 glightoff.png %{buildroot}%{_iconsdir}/%{name}.png
 convert -geometry 16x16 glightoff.png %{buildroot}%{_miconsdir}/%{name}.png
 
 # menu entry
-mkdir -p %{buildroot}%{_menudir}
-cat << _EOF_ > %{buildroot}%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_bindir}/%{name}" \
- icon="%{name}.png" \
- longtitle="Switch all lights off in game board" \
- needs="x11" \
- section="More Applications/Games/Puzzles" \
- title="GLightOff"
-_EOF_
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/%{name} 
+Icon=%{name} 
+Comment=Switch all lights off in game board 
+Categories=Game;LogicGame; 
+Name=GLightOff
+EOF
 
 %find_lang %{name}
 
@@ -66,7 +66,7 @@ rm -rf %{buildroot}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*
 
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
