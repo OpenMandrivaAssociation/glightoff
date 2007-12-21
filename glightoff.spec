@@ -9,6 +9,7 @@ License:	GPL
 Group:		Games/Puzzles
 URL:		http://glightoff.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gtk2-devel >= 2.6
 BuildRequires:	ImageMagick
 BuildRequires:  perl-XML-Parser
