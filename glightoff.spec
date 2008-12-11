@@ -11,7 +11,7 @@ URL:		http://glightoff.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gtk2-devel >= 2.6
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRequires:  perl-XML-Parser
 # see bug 18528, 
 Requires:       librsvg
