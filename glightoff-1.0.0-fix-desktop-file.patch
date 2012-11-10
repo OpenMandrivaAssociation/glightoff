@@ -1,0 +1,17 @@
+Index: glightoff-1.0.0/glightoff.desktop.in
+===================================================================
+--- glightoff-1.0.0/glightoff.desktop.in
++++ glightoff-1.0.0/glightoff.desktop.in	2009-05-14 09:56:31.000000000 +0200
+@@ -1,10 +1,9 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ _Name=GLightOff
+ _Comment=Simple Light Off game
+ Exec=glightoff
+ Terminal=false
+ Type=Application
+-Icon=glightoff.png
+-Categories=GNOME;Application;Game;PuzzleGame;
++Icon=glightoff
++Categories=Game;LogicGame;
+ StartupNotify=true
