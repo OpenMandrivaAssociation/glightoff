@@ -64,3 +64,45 @@ rm -rf %{buildroot}
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-7mdv2011.0
++ Revision: 618962
+- the mass rebuild of 2010.0 packages
+
+* Thu May 14 2009 Samuel Verschelde <stormi@mandriva.org> 1.0.0-6mdv2010.0
++ Revision: 375619
+- fix Licence
+- remove redundant desktop file (#49428)
+- fix desktop file
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.0.0-5mdv2009.0
++ Revision: 246175
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 1.0.0-3mdv2008.1
++ Revision: 131568
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- import glightoff
+
+
+* Wed Sep 28 2005 Nicolas Lécureuil <neoclust@mandriva.org> 1.0.0-3mdk
+- Fix BuildRequires
+
+* Tue Sep 13 2005 Michael Scherer <misc@mandriva.org> 1.0.0-2mdk
+- mkrel
+- requires librsvg to be able to load the svg file, fix #18528
+
+* Thu Feb 03 2005 Abel Cheung <deaddog@mandrake.org> 1.0.0-1mdk
+- First Mandrake package
