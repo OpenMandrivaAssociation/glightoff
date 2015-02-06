@@ -1,5 +1,5 @@
 %define	version	1.0.0
-%define release	%mkrel 7
+%define release	8
 
 Summary:	Simple puzzle game, switch off all the lights on a 5x5 board
 Name:		glightoff
