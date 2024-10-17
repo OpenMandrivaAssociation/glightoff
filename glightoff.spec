@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+
 Group:		Games/Puzzles
-URL:		http://glightoff.sourceforge.net/
+URL:		https://glightoff.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		glightoff-1.0.0-fix-desktop-file.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
