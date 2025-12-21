@@ -11,6 +11,11 @@ URL:		https://glightoff.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		glightoff-1.0.0-fix-desktop-file.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk2-devel >= 2.6
 BuildRequires:	imagemagick
 BuildRequires:  perl-XML-Parser
